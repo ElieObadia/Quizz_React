@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* Styles pour le conteneur de démarrage */
+.start {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M566.9663841883804 314.412159067678L563.9899759904321 257.6189074041514 480.2883025941164 290.4801455328371z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M404.88002025158585 166.05882939281796L316.865106595047 108.90127614963838 275.1362335585471 269.50242325603637z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M95.681%2c527.246C119.167%2c528.104%2c145.315%2c522.29%2c156.199%2c501.46C166.623%2c481.51%2c153.45%2c459.116%2c141.118%2c440.286C130.326%2c423.808%2c115.306%2c410.747%2c95.681%2c409.055C72.465%2c407.053%2c46.337%2c411.129%2c34.287%2c431.074C21.961%2c451.476%2c29.54%2c477.21%2c42.366%2c497.301C54.121%2c515.715%2c73.85%2c526.448%2c95.681%2c527.246' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M98.81147744255266 404.80965312274276L113.95998712981526 528.1843638833377 237.33469789041027 513.0358541960752 222.18618820314765 389.66114343548014z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M304.61%2c278.916C320.353%2c279.446%2c334.645%2c270.601%2c343.013%2c257.255C351.985%2c242.946%2c356.176%2c224.813%2c347.686%2c210.213C339.23%2c195.673%2c321.422%2c190.712%2c304.61%2c191.218C288.774%2c191.695%2c273.304%2c198.723%2c265.805%2c212.679C258.637%2c226.019%2c262.781%2c241.747%2c270.436%2c254.814C277.988%2c267.705%2c289.678%2c278.414%2c304.61%2c278.916' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M620.7233836368633 274.6899051755787L724.4372317231987 261.9554458787475 711.7027724263675 158.24159779241216 607.9889243400321 170.9760570892434z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1000'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+  color: #fff; /* Couleur du texte */
+}
+
+/* Styles pour le titre */
+.title {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Styles pour la description */
+.description {
+  font-size: 24px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+button {
+  display: block;
+  margin: 0 auto; /* Centre horizontalement */
+  padding: 10px 20px;
+  background-color: #9b59b6; /* Couleur violette pastel */
+  color: #fff; /* Couleur du texte */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #8e44ad; /* Couleur violette pastel plus foncée au survol */
+  transform: scale(1.05); /* Légère mise à l'échelle au survol */
+}
+
+hr {
+  width: 75%; /* Largeur maximale de la ligne, par exemple, 50% de la largeur du parent */
+  border: 1px solid #ccc; /* Couleur et épaisseur de la ligne */
+  margin: 20px auto;
+}
+
+.forms {
+  color: white;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M566.9663841883804 314.412159067678L563.9899759904321 257.6189074041514 480.2883025941164 290.4801455328371z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M404.88002025158585 166.05882939281796L316.865106595047 108.90127614963838 275.1362335585471 269.50242325603637z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M95.681%2c527.246C119.167%2c528.104%2c145.315%2c522.29%2c156.199%2c501.46C166.623%2c481.51%2c153.45%2c459.116%2c141.118%2c440.286C130.326%2c423.808%2c115.306%2c410.747%2c95.681%2c409.055C72.465%2c407.053%2c46.337%2c411.129%2c34.287%2c431.074C21.961%2c451.476%2c29.54%2c477.21%2c42.366%2c497.301C54.121%2c515.715%2c73.85%2c526.448%2c95.681%2c527.246' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M98.81147744255266 404.80965312274276L113.95998712981526 528.1843638833377 237.33469789041027 513.0358541960752 222.18618820314765 389.66114343548014z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M304.61%2c278.916C320.353%2c279.446%2c334.645%2c270.601%2c343.013%2c257.255C351.985%2c242.946%2c356.176%2c224.813%2c347.686%2c210.213C339.23%2c195.673%2c321.422%2c190.712%2c304.61%2c191.218C288.774%2c191.695%2c273.304%2c198.723%2c265.805%2c212.679C258.637%2c226.019%2c262.781%2c241.747%2c270.436%2c254.814C277.988%2c267.705%2c289.678%2c278.414%2c304.61%2c278.916' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M620.7233836368633 274.6899051755787L724.4372317231987 261.9554458787475 711.7027724263675 158.24159779241216 607.9889243400321 170.9760570892434z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1000'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+  color: white;
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh; /* Au moins la hauteur de la fenêtre */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Ajoutez de la marge intérieure pour éviter tout débordement */
+  box-sizing: border-box;
+}
+
+.text--title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.questions {
+  flex-grow: 1; /* Permettre à cet élément de prendre tout l'espace vertical disponible */
+  margin: 0; /* Supprimer les marges par défaut */
+  padding: 20px; /* Ajouter de la marge intérieure pour l'espacement */
+  box-sizing: border-box; /* Inclure les marges intérieures dans la taille totale */
+}
+
+.question--text {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.question--option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.question--option input[type="radio"] {
+  display: none;
+}
+
+.question--option label {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: 2px solid #3498db;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+.question--option label:hover {
+  background-color: #2980b9;
+}
+
+.question--option input[type="radio"]:checked + label {
+  background-color: #e74c3c;
+  border: 2px solid #e74c3c;
+}
+
+.awnser--option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.awnser--option label {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: 2px solid #3498db;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+.awnser--option label[data-selected="selected"][data-right="right"] {
+  background-color: green;
+  color: white;
+  border-color: green;
+}
+
+.awnser--option label[data-selected="selected"] {
+  background-color: red;
+  color: white;
+  border-color: red;
+}
+
+.awnser--option label[data-right="right"] {
+  background-color: lightgreen;
+  color: black;
+  border-color: lightgreen;
+}
