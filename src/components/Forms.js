@@ -42,7 +42,7 @@ export default function Forms(props) {
           );
         })
       ),
-    []
+    [props.data]
   );
 
   const [awnser, setAwnser] = React.useState([]);
